@@ -211,7 +211,11 @@ export const HeroText = styled.p`
   font-size: 4em;
   font-weight: bold;
   margin: 0;
+  background-color: #10c500;
   background: -webkit-linear-gradient(right, #faff00, #ad00ff, #10c500);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (max-width: 374px) {
     font-size: 3.5em;
@@ -356,6 +360,9 @@ export const HeroMobileText = styled.p`
   font-weight: bold;
   margin: 0;
   background: -webkit-linear-gradient(right, #faff00, #ad00ff, #10c500);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (min-width: 430px) {
     display: none;
