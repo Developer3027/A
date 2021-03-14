@@ -9,8 +9,16 @@ export const HeroWrapper = styled.div`
 `;
 
 export const HeroContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @media (max-width: 430px) {
@@ -21,9 +29,18 @@ export const HeroContainer = styled.div`
 export const HeroTitleEdge = styled.div`
   font-family: 'Playfair Display', serif;
   font-size: 48px;
+
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+
+  -webkit-text-orientation: mixed;
   text-orientation: mixed;
+
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+
   color: #fff;
   margin-bottom: 0.5em;
 
@@ -33,11 +50,24 @@ export const HeroTitleEdge = styled.div`
 `;
 
 export const HeroOuter = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   @media (max-width: 900px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
@@ -48,6 +78,9 @@ export const HeroOuter = styled.div`
 
 export const HeroInner = styled.div`
   @media (max-width: 900px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 `;
@@ -89,20 +122,37 @@ export const HeroHL = styled.span`
 `;
 
 export const HeroBtns = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   z-index: 1;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+
   margin: 1em 0;
 
   @media (max-width: 900px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 `;
 
 export const HeroBtnTwo = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   width: 160px;
   height: 50px;
   background-color: #777;
@@ -110,6 +160,9 @@ export const HeroBtnTwo = styled.div`
   font-weight: bold;
   color: #fff;
   border-radius: 3px;
+
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
   transition: ease 0.5s;
 
   &:hover {
@@ -133,11 +186,21 @@ export const HeroLink = styled(Link)`
 `;
 
 export const HeroTitle = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 
   @media (max-width: 900px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 5em;
   }
@@ -149,12 +212,6 @@ export const HeroText = styled.p`
   font-weight: bold;
   margin: 0;
   background: -webkit-linear-gradient(right, #faff00, #ad00ff, #10c500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @supports (-webkit-overflow-scrolling: touch) {
-    -webkit-text-fill-color: unset;
-  }
 
   @media (max-width: 374px) {
     font-size: 3.5em;
@@ -183,9 +240,21 @@ export const HeroImg = styled.img`
 //! Mobile layout
 
 export const HeroMobileContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 1.5em 0;
 
@@ -195,6 +264,8 @@ export const HeroMobileContainer = styled.div`
 `;
 
 export const HeroMobileTop = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media (min-width: 430px) {
@@ -205,9 +276,18 @@ export const HeroMobileTop = styled.div`
 export const HeroMobileTitleEdge = styled.div`
   font-family: 'Playfair Display', serif;
   font-size: 48px;
+
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+
+  -webkit-text-orientation: mixed;
   text-orientation: mixed;
+
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+
   color: #fff;
   margin-bottom: 0.5em;
 
@@ -217,8 +297,16 @@ export const HeroMobileTitleEdge = styled.div`
 `;
 
 export const HeroMobilePic = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @media (min-width: 430px) {
@@ -245,8 +333,16 @@ export const HeroMobileLow = styled.div`
 `;
 
 export const HeroMobileTextDiv = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @media (min-width: 430px) {
@@ -260,12 +356,6 @@ export const HeroMobileText = styled.p`
   font-weight: bold;
   margin: 0;
   background: -webkit-linear-gradient(right, #faff00, #ad00ff, #10c500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @supports (-webkit-overflow-scrolling: touch) {
-    -webkit-text-fill-color: unset;
-  }
 
   @media (min-width: 430px) {
     display: none;

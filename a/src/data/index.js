@@ -119,7 +119,7 @@ export const plateGroup = [
     btn2Path: '/music-plate',
     date: 'March 2021',
     linkName: 'Code Link',
-    linkAddr: 'https://mason-roberts.com',
+    linkAddr: 'https://github.com/Developer3027/A',
     desc:
       'My portfolio has gone through various updates over the past few years. From a template put up on github to the current version. The newest version has gone through a complete rework. I spent some time in VScode, working in react, to create a site that is clean, functional, and smart from a code perspective. You can review the code at the github',
     imgSrc: './images/design-port-plate.png',
