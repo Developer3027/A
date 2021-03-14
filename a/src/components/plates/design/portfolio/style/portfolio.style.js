@@ -16,39 +16,61 @@ export const Main = styled.div`
 
 export const PlateTwoCol = styled.div`
   grid-template-columns: 50% 50%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media (max-width: 900px) {
     grid-template-columns: none;
     grid-template-rows: 50% 50%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 `;
 
 export const Wrapper = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
   height: 100%;
-  /* background-image: url('./images/design-port-plate.png');
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: calc(100% - 1em);
-  background-position-y: 2em; */
 `;
 
 export const TopSec = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   margin: 0 1.5em;
 `;
 
 export const Button = styled(Link)`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
   text-decoration: none;
   padding: 0.5em 1.5em;
@@ -58,9 +80,18 @@ export const Button = styled(Link)`
 `;
 
 export const PlateSection = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   padding: 0 1em;
 `;
 
@@ -88,9 +119,18 @@ export const PlateP = styled.p`
 `;
 
 export const PlateImgCol = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   padding: 1em;
 `;
 

@@ -2,8 +2,16 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 `;
 
@@ -15,22 +23,44 @@ export const ContactTopDiv = styled.div`
 `;
 
 export const ContactWrapper = styled.section`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  -ms-flex-direction: column;
   flex-direction: column;
+
   background-color: #333;
-  width: 800px;
-  padding-bottom: 2em;
-  margin-top: 10em;
-  height: 100%;
-  border-radius: 0 0 5px 5px;
 `;
 
 export const ContactForm = styled.form`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 `;
 
@@ -53,6 +83,9 @@ export const ContactInputButton = styled.input`
   font-weight: bold;
   border: none;
   border-radius: 3px;
+
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
   transition: ease 0.5s;
 
   &:hover {

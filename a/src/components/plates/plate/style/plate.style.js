@@ -18,26 +18,46 @@ export const Main = styled(motion.div)`
 
 export const PlateTwoCol = styled.div`
   grid-template-columns: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media (max-width: 900px) {
     grid-template-columns: none;
     grid-template-rows: 50% 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 `;
 
 export const Wrapper = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
 `;
 
 export const TopSec = styled(motion.div)`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0 1.5em;
 `;
@@ -63,14 +83,25 @@ export const PlateButton = styled(motion.p)`
 `;
 
 export const PlateSection = styled(motion.div)`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 1em;
 `;
 
 export const PlateColDiv = styled(motion.div)`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 `;
 
@@ -99,8 +130,14 @@ export const PlateP = styled.p`
 `;
 
 export const PlateImgCol = styled(motion.div)`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1em;
 `;

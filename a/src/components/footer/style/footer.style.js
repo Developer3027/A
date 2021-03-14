@@ -2,8 +2,16 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   background-color: #333;
@@ -14,15 +22,29 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
+  display: --ms-grid;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
 `;
 
 export const FooterMain = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
   margin-left: 2em;
   width: 100%;
 
@@ -32,9 +54,18 @@ export const FooterMain = styled.div`
 `;
 
 export const FooterMid = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   width: 100%;
 
   @media (max-width: 600px) {

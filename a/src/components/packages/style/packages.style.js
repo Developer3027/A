@@ -2,8 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 100%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @media (max-width: 800px) {
@@ -17,12 +27,21 @@ export const Container = styled.section`
 
 export const PackageIndex = styled.div`
   width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 
   @media (max-width: 500px) {
     width: 100%;
     padding: 1rem 2rem;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 `;
@@ -51,10 +70,18 @@ export const DarkBox = styled(Container)`
 `;
 
 export const Banner = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  /* width: 700px; */
+
   margin: 0 auto;
   padding: 1rem 0;
 

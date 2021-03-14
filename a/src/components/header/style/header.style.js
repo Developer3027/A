@@ -16,8 +16,16 @@ import {
 //? Tooltip is in GlobalStyle
 //* The navbar
 export const Navbar = styled.nav`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   background-color: #333;
@@ -31,12 +39,21 @@ export const Navbar = styled.nav`
 //? --------------------Left Navbar + Icons
 //* The left div of the navbar
 export const NavLeft = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
-  // width: 35%;
-  /* height: 70px; */
 `;
 
 // todo: wrap icon in link and rework hover
@@ -53,10 +70,6 @@ export const ProjectIcon = styled(FaMugHot)`
   @media (max-width: 900px) {
     font-size: 1.5em;
   }
-
-  /* @media (max-width: 750px) {
-    font-size: 1.2em;
-  } */
 `;
 
 // todo: wrap icon in link and rework hover
@@ -113,32 +126,28 @@ export const ResumeIcon = styled(FaPaperclip)`
   @media (max-width: 900px) {
     font-size: 1.5em;
   }
-
-  /* @media (max-width: 750px) {
-    font-size: 1.2em;
-  } */
 `;
 
 //? --------------------Center Navbar + Icon
 //* The center div of the navbar
 export const NavCenter = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  //padding-top: 10px;
-  //padding-left: 5px;
 
-  /* @media (max-width: 600px) {
-    padding: 0;
-    margin-top: -15px;
-  } */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 `;
 
 //* Logo Icon - Logo PNG
 export const LogoIcon = styled.img`
   z-index: 5;
   margin-top: 50%;
-  //width: 80%;
 
   @media (max-width: 900px) {
     width: 80%;
@@ -152,12 +161,21 @@ export const HeaderLink = styled(Link)`
 //? --------------------Right Navbar + Icon
 //* The right div of the navbar
 export const NavRight = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
-  // width: 35%;
-  /* height: 70px; */
 `;
 
 // todo: wrap icon in link and rework hover
@@ -174,10 +192,6 @@ export const TwitterIcon = styled(FaTwitter)`
   @media (max-width: 900px) {
     font-size: 1.5em;
   }
-
-  /* @media (max-width: 750px) {
-    font-size: 1.2em;
-  } */
 `;
 
 // todo: wrap icon in link and rework hover
@@ -194,10 +208,6 @@ export const LinkedinIcon = styled(FaLinkedin)`
   @media (max-width: 900px) {
     font-size: 1.5em;
   }
-
-  /* @media (max-width: 750px) {
-    font-size: 1.2em;
-  } */
 `;
 
 // todo: wrap icon in link and rework hover
