@@ -13,6 +13,8 @@ export const ContactContainer = styled.div`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
+  margin-top: calc(100px + 3rem);
 `;
 
 export const ContactTopDiv = styled.div`
@@ -42,6 +44,7 @@ export const ContactWrapper = styled.section`
   flex-direction: column;
 
   background-color: #333;
+  padding-bottom: 1em;
 `;
 
 export const ContactForm = styled.form`

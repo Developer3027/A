@@ -43,6 +43,9 @@ const Footer = () => {
               rel='noopener'>
               <FooterLI>Resume</FooterLI>
             </FooterAnchor>
+            <FooterAnchor href='/LE-1.pdf' target='_blank' rel='noopener'>
+              <FooterLI>Linux Cert</FooterLI>
+            </FooterAnchor>
           </FooterUL>
         </FooterDiv>
         <FooterDiv>
@@ -58,6 +61,19 @@ const Footer = () => {
               target='_blank'
               rel='noreferrer'>
               <FooterLI>Twitter</FooterLI>
+            </FooterAnchor>
+
+            <FooterAnchor
+              href='/CertificateOfCompletion_CSS Essential Training.pdf'
+              target='_blank'
+              rel='noopener'>
+              <FooterLI>CSS Cert</FooterLI>
+            </FooterAnchor>
+            <FooterAnchor
+              href='/CertificateOfCompletion_Programming.pdf'
+              target='_blank'
+              rel='noopener'>
+              <FooterLI>Programming Cert</FooterLI>
             </FooterAnchor>
           </FooterUL>
         </FooterDiv>
