@@ -8,10 +8,24 @@ export const InnerCard = styled.div`
   height: 250px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   background: rgba(0, 0, 0, 0.8);
 `;
 
@@ -29,6 +43,8 @@ export const CardText = styled.span`
 
 export const CardLink = styled(Link)`
   text-decoration: none;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
   transition: ease 0.5s;
 
   &:hover {
