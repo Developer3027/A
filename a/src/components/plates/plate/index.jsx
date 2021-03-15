@@ -7,7 +7,7 @@ import {
   PlateImage,
   Wrapper,
   TopSec,
-  PlateAnchor,
+  PlateLink,
   PlateButton,
   PlateSection,
   PlateColDiv,
@@ -112,17 +112,17 @@ const Plate = ({ id, btn1, btn1Path, plateName, btn2Path, btn2, date, linkAddr, 
         <Wrapper>
           <TopSec 
             variants={topVariant}>
-            <PlateAnchor to={btn1Path}>
+            <PlateLink to={btn1Path}>
               <PlateButton
                 variants={buttonVariant}
                 whileHover='hover'>{btn1}</PlateButton>
-            </PlateAnchor>
+            </PlateLink>
             <h2>{plateName}</h2>
-            <PlateAnchor to={btn2Path}>
+            <PlateLink to={btn2Path}>
               <PlateButton
                 variants={buttonVariant}
                 whileHover='hover'>{btn2}</PlateButton>
-            </PlateAnchor>
+            </PlateLink>
           </TopSec>
           <motion.div
             variants={midVariant}>

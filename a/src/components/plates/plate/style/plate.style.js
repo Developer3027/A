@@ -12,7 +12,7 @@ export const Main = styled(motion.div)`
   overflow-x: hidden;
 
   @media (max-width: 900px) {
-    width: 100%;
+    width: 98%;
   }
 `;
 
@@ -53,16 +53,20 @@ export const TopSec = styled(motion.div)`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 0 1.5em;
+
+  @media (max-width: 600px) {
+    margin: 0 auto;
+  }
 `;
 
-export const PlateAnchor = styled(Link)`
+export const PlateLink = styled(Link)`
   color: #000;
   text-align: center;
   text-decoration: none;
@@ -124,9 +128,13 @@ export const PlateH3 = styled.h3`
 
 export const PlateP = styled.p`
   color: #000;
-  width: 380px;
+  width: 370px;
   margin: 0;
   padding: 1em;
+
+  @media (max-width: 600px) {
+    width: 92%;
+  }
 `;
 
 export const PlateImgCol = styled(motion.div)`

@@ -59,6 +59,11 @@ export const DesignTitle = styled.h1`
   font-size: 3em;
   margin: 0;
   margin-top: 2em;
+
+  @media (max-width: 600px) {
+    padding: 0.5rem;
+    font-size: 2em;
+  }
 `;
 
 export const DesignText = styled.p`
@@ -67,7 +72,11 @@ export const DesignText = styled.p`
   font-size: 1.5em;
 
   @media (max-width: 900px) {
-    width: 100%;
-    padding: 0.3em;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.3em;
   }
 `;

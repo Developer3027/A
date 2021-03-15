@@ -75,6 +75,7 @@ export const FooterMid = styled.div`
 
 export const FooterDiv = styled.div`
   display: flex;
+  justify-content: space-evenly;
 
   @media (max-width: 600px) {
     width: 100%;
