@@ -93,7 +93,7 @@ export const Container = styled.div`
 export const AppSection = styled.section`
   display: flex;
   justify-content: center;
-  padding: 2em 0;
+  padding: 1em 0;
   overflow-x: hidden;
 `;
 

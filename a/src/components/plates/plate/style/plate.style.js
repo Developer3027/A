@@ -8,7 +8,7 @@ export const Main = styled(motion.div)`
   background-color: #fff;
   outline: 2px solid #000;
   outline-offset: -10px;
-  margin: 4em auto;
+  margin: 2rem auto;
   overflow-x: hidden;
 
   @media (max-width: 900px) {
